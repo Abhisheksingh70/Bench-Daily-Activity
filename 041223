@@ -1,0 +1,54 @@
+public class StringOperationsExample {
+
+    public static void main(String[] args) {
+        // Example 1: String Initialization
+        String str1 = "Hello, World!";
+        String str2 = new String("Java Strings");
+
+        // Example 2: Concatenation
+        String greeting = "Hello";
+        String name = "John";
+        String welcomeMessage = greeting + ", " + name + "!";
+
+        // Example 3: String Length
+        String message = "Java is awesome!";
+        int length = message.length();
+        System.out.println("Length of the string: " + length);
+
+        // Example 4: Substring
+        String sentence = "The quick brown fox jumps over the lazy dog";
+        String subString = sentence.substring(10, 20); // Extracts "brown fox"
+
+        // Example 5: String Comparison
+        String strA = "Java";
+        String strB = "java";
+        boolean isEqual = strA.equals(strB); // Case-sensitive comparison
+        boolean isEqualIgnoreCase = strA.equalsIgnoreCase(strB); // Case-insensitive comparison
+
+        // Example 6: String Searching
+        String text = "Programming is fun!";
+        int index = text.indexOf("is"); // Finds the index of the substring "is"
+        int lastIndex = text.lastIndexOf("is"); // Finds the last occurrence of the substring "is"
+
+        // Example 7: Replacing Characters
+        String original = "Hello, World!";
+        String modified = original.replace('o', 'x'); // Replaces 'o' with 'x'
+
+        // Example 8: Splitting Strings
+        String sentenceToSplit = "Java is a versatile programming language";
+        String[] words = sentenceToSplit.split(" "); // Splits the sentence into an array of words
+
+        // Displaying results
+        System.out.println("Example 1: " + str1);
+        System.out.println("Example 2: " + welcomeMessage);
+        System.out.println("Example 3: Length of the string - " + length);
+        System.out.println("Example 4: Substring - " + subString);
+        System.out.println("Example 5: String Comparison - Case-sensitive: " + isEqual + ", Case-insensitive: " + isEqualIgnoreCase);
+        System.out.println("Example 6: Index of 'is': " + index + ", Last Index of 'is': " + lastIndex);
+        System.out.println("Example 7: Replacing 'o' with 'x': " + modified);
+        System.out.print("Example 8: Splitting into words - ");
+        for (String word : words) {
+            System.out.print(word + " ");
+        }
+    }
+}
